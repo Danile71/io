@@ -28,6 +28,10 @@ public class Module implements StatefulFunctionModule {
 		binder.bindIngress(IngressRouter.INGRESS_SPEC);
 		binder.bindIngressRouter(IngressRouter.INGRESS, ingressRouter);
 		binder.bindEgress(Egress.EGRESS_SPEC);
+		
+		binder.bindIngress(IngressRouter.INGRESS_SPEC);
+		binder.bindIngressRouter(IngressRouter.INGRESS, ingressRouter);
+		
 		health();
 	}
 

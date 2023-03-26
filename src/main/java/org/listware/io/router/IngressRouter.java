@@ -36,7 +36,6 @@ public class IngressRouter implements Router<TypedValue> {
 
 	@Override
 	public void route(TypedValue message, Downstream<TypedValue> downstream) {
-
 		try {
 			FunctionContext functionContext = FunctionContext.parseFrom(message.getValue());
 
